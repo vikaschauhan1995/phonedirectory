@@ -1,0 +1,45 @@
+@import '../color';
+@import '../dimen';
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header__container {
+  display: flex;
+  background-color: $grayish-blue-color;
+  align-items: center;
+  border-radius: $large-border-radius;
+  margin: $primary-padding;
+  width: 100%;
+}
+
+.header__search {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  // background-color: green;
+}
+
+.header__search>form {
+  width: 100%;
+}
+
+.header__search>form>input[type="text"] {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: $primary-padding;
+  padding-bottom: $primary-padding;
+  width: 100%;
+}
+
+.header__search>form>input[type="text"]:focus {
+  outline: none;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

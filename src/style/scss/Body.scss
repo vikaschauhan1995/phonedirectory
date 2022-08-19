@@ -1,0 +1,12 @@
+@import '../color';
+@import '../dimen';
+
+.body {
+  flex: 1;
+  min-width: 200px;
+  overflow: scroll;
+}
+
+.body::-webkit-scrollbar {
+  display: none;
+}

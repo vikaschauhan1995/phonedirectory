@@ -1,0 +1,27 @@
+@import 'color';
+@import 'dimen';
+
+
+@import 'color';
+@import 'dimen';
+
+:export {
+  whiteColor: $white-color;
+  grayColor: $gray-color;
+  lightGreen: $light-green-color;
+  lightGray: $light-gray-color;
+  grayishBlueColor: $grayish-blue-color;
+}
+
+:export {
+  appBodyBackgroundColor: $app-body-background-color;
+  bodyBoxShadow: $body-box-shadow;
+}
+
+:export {
+  primaryBorderRadius: $primary-border-radius;
+  largeBorderRadius: $large-border-radius;
+  primaryPadding: $primary-padding;
+  footerHeight: $footer-height;
+  dialPadDimen: $dial-pad-dimen;
+}

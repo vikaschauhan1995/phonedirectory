@@ -1,0 +1,33 @@
+@import '../color';
+@import '../dimen';
+
+.footer {
+  display: flex;
+  background-color: $grayish-blue-color;
+}
+
+.footer .item {
+  background-color: $grayish-blue-color;
+  flex-direction: column;
+  flex: 0.3333;
+  text-align: center;
+}
+
+.footer .item .MuiSvgIcon-root {
+  padding: $primary-padding;
+  align-items: center;
+}
+
+.footer__dialpad {
+  display: flex;
+}
+
+.flexi {
+  display: flex;
+  width: 100%;
+}
+
+.footer__dialpad .MuiSvgIcon-root {
+  height: $dial-pad-dimen;
+  width: $dial-pad-dimen;
+}
