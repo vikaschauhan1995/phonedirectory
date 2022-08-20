@@ -1,31 +1,36 @@
 import React from 'react'
 import '../style/scss/Footer.scss';
-import { StarBorder, star, AccessTime, AccessTimeTwoTone, Group, GroupOutlined, Dialpad } from '@material-ui/icons';
-import { IconButton } from '@material-ui/core';
+import { StarBorder, Star, AccessTime, AccessTimeTwoTone, Group, GroupOutlined, Dialpad } from '@material-ui/icons';
+import { IconButton, Button } from '@material-ui/core';
+import {
+  TAB_FAVOURITE__KEY__,
+  TAB_RECCENT__KEY__,
+  TAB_CONTACTS__KEY__,
+} from '../constants';
 
-function Footer() {
+function Footer({ activeTab, setActiveTab }) {
   return (
     <div className="footer__parentContainer">
       <div className="footer__dialpad">
         <div className="flexi"></div>
-        <IconButton>
+        <Button variant="contained">
           <Dialpad />
-        </IconButton>
+        </Button>
       </div>
       <div className="footer">
         <div className="item">
-          <IconButton>
-            <StarBorder />
+          <IconButton onClick={() => setActiveTab(TAB_FAVOURITE__KEY__)}>
+            {activeTab == TAB_FAVOURITE__KEY__ ? <Star /> : <StarBorder />}
           </IconButton>
         </div>
         <div className="item">
-          <IconButton>
-            <AccessTime />
+          <IconButton onClick={() => setActiveTab(TAB_RECCENT__KEY__)}>
+            {activeTab == TAB_RECCENT__KEY__ ? <AccessTimeTwoTone /> : <AccessTime />}
           </IconButton>
         </div>
         <div className="item">
-          <IconButton>
-            <GroupOutlined />
+          <IconButton onClick={() => setActiveTab(TAB_CONTACTS__KEY__)}>
+            {activeTab == TAB_CONTACTS__KEY__ ? <Group /> : <GroupOutlined />}
           </IconButton>
         </div>
       </div>

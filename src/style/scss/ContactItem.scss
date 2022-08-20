@@ -1,0 +1,13 @@
+@import '../color';
+@import '../dimen';
+
+.contactItem {
+  display: flex;
+  place-items: center;
+}
+
+.contactItem .MuiButtonBase-root {
+  width: 100%;
+  justify-content: left;
+  text-transform: none;
+}

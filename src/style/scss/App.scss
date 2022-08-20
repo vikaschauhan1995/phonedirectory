@@ -12,7 +12,8 @@
   display: flex;
   background-color: $app-body-background-color;
   height: 90vh;
-  width: 30vw;
+  // width: 30vw;
+  min-width: 450px;
   box-shadow: -1px 4px 20px -6px $body-box-shadow;
   flex-direction: column;
 }

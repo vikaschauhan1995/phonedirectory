@@ -1,0 +1,55 @@
+@import '../color';
+@import '../dimen';
+
+.recentItems {
+  display: flex;
+}
+
+.recentItems__info {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.recentItems__info>div {
+  width: 100%;
+}
+
+.recentItems .MuiButtonBase-root {
+  width: 100%;
+  justify-content: left;
+  text-transform: none;
+  padding-left: $primary-padding;
+}
+
+span {
+  display: flex;
+}
+
+.recentItems__detail {
+  display: 1;
+  width: 100%;
+}
+
+.recentItems__info>.MuiButtonBase-root {
+  height: $md-icon-dimen;
+  width: $md-icon-dimen;
+}
+
+.recentItems__detail span>.MuiSvgIcon-root {
+  padding-right: $xs-icon-dimen ;
+  height: $xs-icon-dimen;
+  width: $xs-icon-dimen;
+}
+
+.recentItems__detail span {
+  align-items: center;
+}
+
+// .recentItems__info>.MuiButtonBase-root {
+//   display: flex;
+// }
+
+// .recentItems__detail{
+
+// }

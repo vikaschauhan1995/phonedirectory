@@ -1,0 +1,12 @@
+@import '../color';
+@import '../dimen';
+
+
+.createNewContact {
+  display: flex;
+  place-items: center;
+}
+
+.createNewContact>button {
+  width: 100%;
+}

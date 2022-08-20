@@ -31,3 +31,15 @@
   height: $dial-pad-dimen;
   width: $dial-pad-dimen;
 }
+
+.footer__dialpad>button {
+  margin-bottom: $primary-margin;
+  margin-right: $primary-margin;
+  border-radius: $mid-border-radius;
+  background-color: $button-bg-color;
+  color: $white-color;
+}
+
+.footer__dialpad>button:hover {
+  background-color: $button-bg-color;
+}

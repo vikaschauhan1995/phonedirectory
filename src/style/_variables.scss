@@ -11,6 +11,7 @@
   lightGreen: $light-green-color;
   lightGray: $light-gray-color;
   grayishBlueColor: $grayish-blue-color;
+  buttonBgColor: $button-bg-color;
 }
 
 :export {
@@ -20,8 +21,12 @@
 
 :export {
   primaryBorderRadius: $primary-border-radius;
+  midBorderRadius: $mid-border-radius;
   largeBorderRadius: $large-border-radius;
   primaryPadding: $primary-padding;
   footerHeight: $footer-height;
   dialPadDimen: $dial-pad-dimen;
+  primaryMargin: $primary-margin;
+  xsIconDimen: $xs-icon-dimen;
+  mdIconDimen: $md-icon-dimen;
 }
